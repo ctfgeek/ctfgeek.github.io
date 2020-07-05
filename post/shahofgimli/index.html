@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.73.0" />
+
+  <title>ShahOfGimli - #CTFlearn &middot; CTFgeek</title>
+
+    
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="ctfgeek.github.io/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="ctfgeek.github.io/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="ctfgeek.github.io/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+ 
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="ctfgeek.github.io/img/favicon.ico" type="image/x-icon" />
+
+  
+    
+        <link rel="stylesheet" href="ctfgeek.github.io/css/my.css">
+    
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="ctfgeek.github.io/">CTFgeek</a>
+
+<div style="margin: 0 0 0 10px"><small><b>Menu</b></small></div>
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="ctfgeek.github.io/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="ctfgeek.github.io/post/"><i class='fa fa-list fa-fw'></i>Write ups</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div style="margin:30px 0 0 10px;"><small><b>Contact</b></small></div>
+<div class="pure-menu social">
+  <ul class="pure-menu-list">
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/Whit3_at" rel="me" target="_blank"><i class="fab fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div style="position:absolute;bottom:0">
+  <div class="small-print">
+    <small>Theme:&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+    <small>Modified for:<a href="ctfgeek.github.io/">CTFgeek</a></small>
+  </div>
+  <div class="small-print">
+    <small>&copy; 2020. All rights reserved.</small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>ShahOfGimli - #CTFlearn</h1>
+  <h2></h2>
+</div>
+<br>
+<div style="text-align:justify" class="content">
+  <div class="post-meta">
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time style="float:left">05 Jul 2020</time>
+    <div style="float: right">Author: naxedee</div>
+  </div>
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-topic" href="ctfgeek.github.io/topics/ctflearn">CTFlearn</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="ctfgeek.github.io/tags/forensic">Forensic</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="ctfgeek.github.io/tags/medium">Medium</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  <h2 id="references">References</h2>
+<hr>
+<p>Original challenge site: <a href="https://ctflearn.com/challenge/958">CTFlearn</a></p>
+<p>Author: <a href="https://twitter.com/kcbowhunter">kcbowhunter</a></p>
+<p>Direct file link: <a href="https://ctflearn.com/challenge/download/958">ShahOfGimli.jpg</a></p>
+<h2 id="before-reading-write-up">Before reading write up</h2>
+<hr>
+<p>Before reading this write up you should get familiar with materials linked below. It should be enough to deal with this challenge. <strong>It would be better if you do it yourself. Check this article only if really neccessery (you got stuck for a long time)</strong>.</p>
+<blockquote>
+<p><a href="https://dev.exiv2.org/projects/exiv2/wiki/The_Metadata_in_JPEG_files">JPEG structure and typical markers</a><br>
+<a href="https://linux.die.net/man/1/strings">Strings in files</a><br>
+<a href="https://gist.github.com/briankip/8f8747a2488af827e3b4">Binwalk - checking binnary structure of file</a> - pay attention to <strong>-e</strong> parameter.<br>
+<a href="https://wiki.openssl.org/index.php/Enc">Open SSL Wiki</a><br>
+<a href="https://linux.die.net/man/1/sha256sum">SHA-256</a><br>
+<a href="https://www.youtube.com/results?search_query=xxd+hex+tutorial">xxd</a> - or any other program to see the exact, binnary structure of the file.
+<a href="https://linux.die.net/man/1/base64">base64</a></p>
+</blockquote>
+<p>The solution may vary depending on the Operating System you are using. I am solving all CTFs on Kali Linux distribution.</p>
+<h2 id="challenge-explanation">Challenge explanation</h2>
+<hr>
+<p>Every JPEG file can contain many comments inside. They are called COM0, COM1, &hellip; depending how many comments are included. The most important thing you have to know is that, every comment is marked by <strong>comment marker <code>0xFF 0xFE</code></strong> - two bytes in hexadecimal system. Next two bytes define the size of the comment. So&hellip; the comment content offset is 4 bytes from <code>0xFF</code> byte. The comment ends where the next (any) JPEG marker stands.</p>
+<p>As above we are ready to analyse our file. At start we are going to use xxd to reach the hexdump.</p>
+<blockquote>
+<p><code>root@kali:~/Pulpit/shah# xxd ShahOfGimli.jpg &gt; hexdump</code></p>
+</blockquote>
+<p>The new file was created and now we are able to read the binnary content of <em>ShahOfGimli.jpg</em>. Below few lines are presented.</p>
+<pre><code>00000000: ffd8 ffe0 0010 4a46 4946 0001 0101 0000  ......JFIF......
+00000010: 0000 0000 fffe 0039 4354 466c 6561 726e  .......9CTFlearn
+00000020: 7b47 696d 6c69 5f57 6173 5f50 6172 745f  {Gimli_Was_Part_
+00000030: 4f66 5f54 6865 5f46 656c 6c6f 7773 6869  Of_The_Fellowshi
+00000040: 705f 4f66 5f54 6865 5f52 696e 677d 0aff  p_Of_The_Ring}..
+00000050: fe08 e051 3152 4762 4756 6863 6d35 3752  ...Q1RGbGVhcm57R
+00000060: 326c 7462 476b 7553 584d 7551 5335 4564  2ltbGkuSXMuQS5Ed
+00000070: 3246 795a 6e30 4b43 6c64 6f62 7942 7063  2FyZn0KCldobyBpc
+00000080: 7942 4861 5731 7361 5438 6749 466c 7664  yBHaW1saT8gIFlvd
+00000090: 5342 6a59 5734 6762 4756 6863 6d34 670a  SBjYW4gbGVhcm4g.
+000000a0: 6257 3979 5a53 4268 596d 3931 6443 4248  bW9yZSBhYm91dCBH
+000000b0: 6157 3173 6153 426f 5a58 4a6c 4f67 706f  aW1saSBoZXJlOgpo
+</code></pre><p>As we can see the first marker is placed on <code>0x00000014</code> position. From the hexdump we are able to read COM0:</p>
+<blockquote>
+<p><code>CTFlearn{Gimli_Was_Part_Of_The_Fellowship_Of_The_Ring}</code></p>
+</blockquote>
+<p>Of course it&rsquo;s just a bait and it&rsquo;s not the flag we are looking for. If you are more experienced and want faster analysis you may use <strong>strings</strong>.</p>
+<blockquote>
+<p><code>root@kali:~/Pulpit/shah# strings ShahOfGimli.jpg | more</code></p>
+</blockquote>
+<pre><code>JFIF
+9CTFlearn{Gimli_Was_Part_Of_The_Fellowship_Of_The_Ring}
+Q1RGbGVhcm57R2ltbGkuSXMuQS5Ed2FyZn0KCldobyBpcyBHaW1saT8gIFlvdSBjYW4gbGVhcm4g
+bW9yZSBhYm91dCBHaW1saSBoZXJlOgpodHRwczovL2xvdHIuZmFuZG9tLmNvbS93aWtpL0dpbWxp
+Cmh0dHBzOi8vZW4ud2lraXBlZGlhLm9yZy93aWtpL0dpbWxpXyhNaWRkbGUtZWFydGgpCgpUaGlz
+IGNoYWxsZW5nZSBpcyBiYXNlZCBvbiBoYXNoIGFsZ29yaXRobXMgYW5kIGVuY3J5cHRpb24uCgpJ
+IGFtIHVzaW5nIE9QRU5TU0wgdjEuMS4xIHRvIGNyZWF0ZSB0aGlzIGNoYWxsZW5nZS4KCkhlcmUg
+aXMgYSByZWZlcmVuY2UgZm9yIHVzaW5nIGhhc2ggY2FsY3VsYXRpb25zIHdpdGggT1BFTlNTTDoK
+aHR0cHM6Ly93d3cub3BlbnNzbC5vcmcvZG9jcy9tYW4xLjEuMS9tYW4xL29wZW5zc2wtZGdzdC5o
+dG1sCgpJZiB5b3UgYXJlIGEgUHl0aG9uIGNvZGVyLCBQeXRob24gcHJvdmlkZXMgYSBoYXNoaW5n
+IGxpYnJhcnkgeW91IG1pZ2h0IGZpbmQgdXNlZnVsOgpodHRwczovL2RvY3MucHl0aG9uLm9yZy8z
+L2xpYnJhcnkvaGFzaGxpYi5odG1sCgpJZiB0aGlzIGNoYWxsZW5nZSBoYXMgeW91IHdvbmRlcmlu
+ZyB3aGF0IHRvIGRvIG5leHQsIHBsZWFzZSB0cnkgbXkgb3RoZXIgY2hhbGxlbmdlcwp0aGF0IGFy
+ZSB3b3J0aCBmZXdlciBwb2ludHMuICBUaGUgbW9yZSBwb2ludHMsIHRoZSBtb3JlIGRpZmZpY3Vs
+dCB0aGUgY2hhbGxlbmdlLgoKSWYgeW91IGFyZSBuZXcgdG8gQ1RGIGFuZC9vciBub3QgcXVpdGUg
+c3VyZSBob3cgdG8gc29sdmUgdGhpcyBjaGFsbGVuZ2UsCnlvdSBzaG91bGQgcHJvYmFibHkgdHJ5
+IHRoZXNlIG90aGVyIGNoYWxsZW5nZXMgZmlyc3QgaW4gdGhpcyBvcmRlcjoKUnViYmVyRHVjawpT
+bm93Ym9hcmQKUGlrZXNQZWFrCkdhbmRhbGZUaGVXaXNlCgpBZnRlciBzb2x2aW5nIHRoaXMgU2hh
+aE9mR2ltbGkgY2hhbGxlbmdlLCB0aGVuIHRyeToKSGFpbENhZXNhcgpNb3VudGFpbk1hbgpLZXlN
+</code></pre><p>Going throught the file we will extract exactly 6 comments. Now we will focus on COM1 and COM2.</p>
+<p><strong>COM1</strong></p>
+<pre><code>Q1RGbGVhcm57R2ltbGkuSXMuQS5Ed2FyZn0KCldobyBpcyBHaW1saT8gIFlvdSBjYW4gbGVhcm4g
+bW9yZSBhYm91dCBHaW1saSBoZXJlOgpodHRwczovL2xvdHIuZmFuZG9tLmNvbS93aWtpL0dpbWxp
+Cmh0dHBzOi8vZW4ud2lraXBlZGlhLm9yZy93aWtpL0dpbWxpXyhNaWRkbGUtZWFydGgpCgpUaGlz
+IGNoYWxsZW5nZSBpcyBiYXNlZCBvbiBoYXNoIGFsZ29yaXRobXMgYW5kIGVuY3J5cHRpb24uCgpJ
+IGFtIHVzaW5nIE9QRU5TU0wgdjEuMS4xIHRvIGNyZWF0ZSB0aGlzIGNoYWxsZW5nZS4KCkhlcmUg
+aXMgYSByZWZlcmVuY2UgZm9yIHVzaW5nIGhhc2ggY2FsY3VsYXRpb25zIHdpdGggT1BFTlNTTDoK
+aHR0cHM6Ly93d3cub3BlbnNzbC5vcmcvZG9jcy9tYW4xLjEuMS9tYW4xL29wZW5zc2wtZGdzdC5o
+dG1sCgpJZiB5b3UgYXJlIGEgUHl0aG9uIGNvZGVyLCBQeXRob24gcHJvdmlkZXMgYSBoYXNoaW5n
+IGxpYnJhcnkgeW91IG1pZ2h0IGZpbmQgdXNlZnVsOgpodHRwczovL2RvY3MucHl0aG9uLm9yZy8z
+L2xpYnJhcnkvaGFzaGxpYi5odG1sCgpJZiB0aGlzIGNoYWxsZW5nZSBoYXMgeW91IHdvbmRlcmlu
+ZyB3aGF0IHRvIGRvIG5leHQsIHBsZWFzZSB0cnkgbXkgb3RoZXIgY2hhbGxlbmdlcwp0aGF0IGFy
+ZSB3b3J0aCBmZXdlciBwb2ludHMuICBUaGUgbW9yZSBwb2ludHMsIHRoZSBtb3JlIGRpZmZpY3Vs
+dCB0aGUgY2hhbGxlbmdlLgoKSWYgeW91IGFyZSBuZXcgdG8gQ1RGIGFuZC9vciBub3QgcXVpdGUg
+c3VyZSBob3cgdG8gc29sdmUgdGhpcyBjaGFsbGVuZ2UsCnlvdSBzaG91bGQgcHJvYmFibHkgdHJ5
+IHRoZXNlIG90aGVyIGNoYWxsZW5nZXMgZmlyc3QgaW4gdGhpcyBvcmRlcjoKUnViYmVyRHVjawpT
+bm93Ym9hcmQKUGlrZXNQZWFrCkdhbmRhbGZUaGVXaXNlCgpBZnRlciBzb2x2aW5nIHRoaXMgU2hh
+aE9mR2ltbGkgY2hhbGxlbmdlLCB0aGVuIHRyeToKSGFpbENhZXNhcgpNb3VudGFpbk1hbgpLZXlN
+YWtlcgpWYXJnYXNJc2xhbmQKCk15IFR3aXR0ZXIgRE0ncyBhcmUgb3BlbiBAa2Nib3dodW50ZXIu
+CgotLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCgpUaGUgdGhpcmQgY29tbWVudCBibG9jayBp
+cyBlbmNyeXB0ZWQgd2l0aCBBRVMgQ0JDIGVuY3J5cHRpb24gdXNpbmcgdGhlIGZvbGxvd2luZyBr
+ZXk6CnNoYTI1NiBoYXNoIG9mIHRoZSBzdHJpbmcgIkNURmxlYXJuIgoKTm90ZSB0aGF0IHRoZSBj
+b21tZW50IGJsb2NrIGlzIGFsc28gYmFzZTY0IGVuY29kZWQKVGhlcmUgaXMgbm8gaXYgYnV0IHlv
+dSBuZWVkIHRvIGRldGVybWluZSBob3cgdG8gZXhwcmVzcyB0aGlzIG1hdGhlbWF0aWNhbGx5CgpJ
+ZiB5b3UgYXJlIG5ldyB0byBlbmNyeXB0aW9uIGFuZCBoYXNoIGFsZ29yaXRobXMgaGVyZSBpcyBh
+IGdvb2QgcGxhY2UgdG8gc3RhcnQ6Cm9wZW5zc2wgZW5jIC1oZWxwCm9wZW5zc2wgZGdzdCAtaGVs
+cApzaGEyNTZzdW0KCk9mIGNvdXJzZSBHb29nbGUgaXMgeW91ciBmcmllbmQgKGlmIHlvdSBkb24n
+dCBtaW5kIHRoZW0gcmVjb3JkaW5nIGFsbCB5b3VyIG9ubGluZSBhY3Rpdml0eSkKCmh0dHBzOi8v
+d2lraS5vcGVuc3NsLm9yZy9pbmRleC5waHAvRW5jIGlzIGEgZ29vZCByZWZlcmVuY2UgZm9yIG9w
+ZW5zc2wgZW5jcnlwdGlvbiBhbGdvcml0aG1zCmh0dHBzOi8vZG9jcy5weXRob24ub3JnLzMvbGli
+cmFyeS9oYXNobGliLmh0bWwKCgoKCgoKCgo=
+</code></pre><p>This is characteristic string of characters ended with <strong>=</strong>. Due to this fact we can suppose the content was encoded with base64. If we decode this, we will get some tips to solve the challenge. I&rsquo;ve saved this string to the file named COM1.</p>
+<blockquote>
+<p><code>root@kali:~/Pulpit/shah# base64 -d COM1</code></p>
+</blockquote>
+<pre><code>CTFlearn{Gimli.Is.A.Dwarf}
+
+Who is Gimli?  You can learn more about Gimli here:
+https://lotr.fandom.com/wiki/Gimli
+https://en.wikipedia.org/wiki/Gimli_(Middle-earth)
+
+This challenge is based on hash algorithms and encryption.
+
+I am using OPENSSL v1.1.1 to create this challenge.
+
+Here is a reference for using hash calculations with OPENSSL:
+https://www.openssl.org/docs/man1.1.1/man1/openssl-dgst.html
+
+If you are a Python coder, Python provides a hashing library you might find useful:
+https://docs.python.org/3/library/hashlib.html
+
+If this challenge has you wondering what to do next, please try my other challenges
+that are worth fewer points.  The more points, the more difficult the challenge.
+
+If you are new to CTF and/or not quite sure how to solve this challenge,
+you should probably try these other challenges first in this order:
+RubberDuck
+Snowboard
+PikesPeak
+GandalfTheWise
+
+After solving this ShahOfGimli challenge, then try:
+HailCaesar
+MountainMan
+KeyMaker
+VargasIsland
+
+My Twitter DM's are open @kcbowhunter.
+
+----------------------------
+
+The third comment block is encrypted with AES CBC encryption using the following key:
+sha256 hash of the string &quot;CTFlearn&quot;
+
+Note that the comment block is also base64 encoded
+There is no iv but you need to determine how to express this mathematically
+
+If you are new to encryption and hash algorithms here is a good place to start:
+openssl enc -help
+openssl dgst -help
+sha256sum
+
+Of course Google is your friend (if you don't mind them recording all your online activity)
+
+https://wiki.openssl.org/index.php/Enc is a good reference for openssl encryption algorithms
+https://docs.python.org/3/library/hashlib.html
+</code></pre><p>The most important information  form this file are:</p>
+<ul>
+<li>The third comment block is encrypted with AES CBC encryption using the following key</li>
+<li>sha256 hash of the string &ldquo;CTFlearn&rdquo;</li>
+</ul>
+<p>So let&rsquo;s extract COM2 (3rd) and get our sha256 digest.</p>
+<p><strong>COM2</strong></p>
+<pre><code>TZm1GWpQfUB+7cM2BIng5MCeEgBqxIKunpThaVKemNBmvbis9H0rTAOSIYXsu8va
+CK6Z67gNHOQYBPUNl1mY6jWVLfq+5FmUtaW/lnYT71rBlmPcBLymDGFj2BJjZWY4
+A3aM2Mp0AGDPrK3X4eMu8Q==
+</code></pre><p>This string seems to be base64 encoded also. If we try to decode this we will get some binnary output (non-printable characters) - according to the tips it is also enrypted. Now we will reach our key which is sha256 digest.</p>
+<blockquote>
+<p><code>root@kali:~/Pulpit/shah# echo -n &quot;CTFlearn&quot; | sha256sum</code></p>
+</blockquote>
+<pre><code>b18ef1351fc0df641abbe56dcd4928a8bb98452b1b43d8c1c13f1874c8b35056
+</code></pre><p>Now we are ready to use OpenSSL library to decrypt COM2.</p>
+<blockquote>
+<p><code>root@kali:~/Pulpit/shah# openssl aes-256-cbc -d -in COM2 -base64 -out</code>
+<code>COM2_decrypted</code><br>
+<code>-K b18ef1351fc0df641abbe56dcd4928a8bb98452b1b43d8c1c13f1874c8b35056 -iv 00000000000000000000000000000000</code></p>
+</blockquote>
+<p><strong>COM2_decrypted</strong></p>
+<pre><code>CTFlearn{The_Shah_Of_Gimli_Is_The_Key}
+CTFlearn{Gimli_Has_256_Gemstones}
+CTFlearn{Breakfast_Hash_Is_The_Best}
+</code></pre><p>There&rsquo;re another tips to solve the problem. Imho they mean to use sha256 on the key before decrypting something. But what should we decrypt more? Let&rsquo;s dive a bit deeper. Let&rsquo;s look at COM6. There&rsquo;s another base64 encoded data.</p>
+<p><strong>COM6</strong></p>
+<pre><code>H4sIAAAAAAAAA+1YWW/bOBDOq/UrWPnFQp1Ukp2jRtKizdED22ObFlggDQzKpm1tZMmQ6MbZIP99
+Z4akDltO2wXa7i7MPMTiHJz5OAfJ1zMx9nZmN1s/cLgw9nd38b+3v+uW/+NPt7Prb3mdPWDp7u16
+3S2Y2nPdLeb+SKPMmGeSp4xtpUl8L9/X6P/R0XzwaJ6lj4IwfjS7kZMk7lhWk/2JUWFZ4XSWpJIl
+mfmV3WSWNe6/4emVSN/yqcjYERuGA9lyQOx4IgZXLBwxORFsFEaCiUWYyayNc3EicT7GOWkNxYgR
++6vRGTCeEl8LZWLQ6vSshhZJsp0Zl5MdscrRmKVhLFv2aZomaY99inkAS8qEJTNYBjl7zGYPWS4D
+IuAAqpItHw1OBR8ycJ2nN8TVZqmQ8zRmPGOcBTdSMJ6m/IbM/QDMz4kXLa5YEnCAAdmJG7BojGAC
+zcjZ2sxOA9vRvKMdXJoYdwZRkgn8qdcOuEXrPZ+H0VAhfQIIhwku3cLlKhtw4S6G/BJ02ufvzu1V
+4kgQ8fjdmxriMCDiye8f64gHWu2rOuJjIp7WEgddpfZlndrBQBGfHdcRXb3mmVtH9QzVq6P6hurX
+UTuG2qlzZ6iM+oDujJKULVgYs5THY9FyF8JtM0DSpairii5I7tn79xhpmUxbi23kd2q0jJQWsVbL
+6/cvylpgPUuFwgshC+5WoNMjQOUVPahYR1FVf3BpNUSUiRKD/fTpUxtznZJATtJkPp5Q5mYDHrMh
+l5xFSXIVxmOGriBFxEMQSEZVNtJBOnE6GY0yITENtcQqP7r0Pk0GIsvOYfIE5lpIaDOsxRLdw88s
+/EsALJA/RAVIF/BJLFbjeoL1ZcEOmWFF3wAV/CQ8jxDsEc42Ag/LFBEeepc4k2YSU9ZjT5Bt6DIO
+hsLnIX3uIwvoQi5wHcVx3nVJG5mxgI3y6GuQxDKM54LUKhwW20gq2PLcdhtNJrBcWSXQ0rkwRXMc
+foHSNaWdY2EGwEdRci3AtBsmrxPEYiwnVGoyglFt8kue/UaU50hoTXWATJXZQ95jTYUb7gXtA9QK
+vUwREWccIqQs6Hq9e6jDg3upj9dQy4BPDd4rvDliHwEdBIviMTRlmeqsCSxsVlS+gU0sZMoH1GmY
+vJlB2dXxiMtp9LSYcj8zCfYatCg0MxVuYJNmgX28gKhRmsyXUlalMfhyrcZgQqGrPuojWYWvlqrG
+sJYmYbPmDp9BMxm21KdjNa0mtj9KIe0IihZxrhgvVUrA9INSNpTbJvNhJ6Qx5Na9A7Zbt+f6i7se
+O13MBDQeKAAoy4K5hICcA5DA4xGPvQOlYcqlNqwNSznYZos+24EaBob5VcNUFmp4jXOB7yh7tTUY
+RyovfWW/irgl+3er9les/mN48G1W+0tWd/FTRPW2lKK/ulkmJoxDikiajRqj7yHzrWrtoNVy7bzs
+6RmZf+6es212btIYK6etrIbzA9CP1tRUjbhveMFILKNKaFuTS6vl6opo6JYwU2Sn6pWW0SVxCQa1
+pnOvv49X/cVZsE93kHDKx0L5u6TepckA2tgVFoqxUNmvkx1aZBCOUUsIZU/5APzRUqbghmBIRv7K
+fOdSJRuZFnk9woVFfu/WK1CJvDZMESoDsB4xgTl2eMgOHNAR4W4vRwfyOSXdH8FqTDSdf6U2AHF7
+MLwrAlg1gHzxwG8zpc2x6kJNWYQhZ8pqS6eeiQ74oa1zLN2ewSQsiceTeXyVlY6x6yVhC80Gau7q
++Rt+2p8pZjWb7l6fJf69I3Xqt2pminf5GEXrGfsdOkvxALytnpE0HQ4CTnFRuO32/LsKxLedXhc2
+87MEYPdyhPcWas43qPvVFCiU5yjQbw0E/uZBe+Hg8W3NKd5qKpsqxzTgh5zo9xGsfh8zw+73pzyM
++327Z+Ww4bZ4kBmnCz4NY8HwmyHk7BjSS8Qys7HogipECmsaT8dfHOy1Xuna9CmDjOqpq16+R3bl
+kuShnnz7jpjRdQHl+3tuaN9/NWugWdTzv/liVZKou17l8OE9jnKYkoiN0mTKKqkMyo0up12YiLvZ
+MPtmGC7c3l73Mt9OmxH096SXitTyYSNfC/X/k7yDqveNidf8nsxrfj31ml/NvaK6/ay8o33KN/tZ
+FLGTJBYPbOdXv7T8O8epOjDTxeFHPQPS+9/+uvc/1/c7rnr/23fdPZz3fL/rb97/fsaoe/8rPfYV
+L4DqXEBNAx+hGIxqI1mKJPYqns0ltaV3c2l+quOrqjJQY0paPsu3iYQeMYHjvD674UU1ECwWYy7h
+YkzPEDClzzWpiNT06lMDFr712umVgkxSj5RwwEq+iPQ6DSV0T7yKh1K/XNrmBQabxvKzH6pf6oFh
+NqphKtmx/q3SLrWaXKrSiXFibftDYvVpkdiL9oefSy+M5R1rhbF6AQVk9A99OVKboV3RDTaHQ0lV
+oKb+areL2y6YWO61hDnQjWjVr3x5+9q4pQ4yGBBPmFsgOtrBHROt0mm9p+86in3bu1QK1MvXfXJK
+4NIYU6B234GsvK362eEDv2YEJztDV5/RsUy70Sz4K+eyFWpOsUrul85xcBfeLdzRGbkaMq6RJ5yX
+Tm9I0FCXKb6mmCtE2ZyLjoZTb8YStWvQ+66ossoolpq19avr4mZsxmZsxmZsxmZsxmZsxmZsxv9t
+/A3BMDa8ACgAAA==
+</code></pre><blockquote>
+<p>root@kali:~/Pulpit/shah# base64 -d COM6 &gt; test</p>
+</blockquote>
+<p>If we decode this we will get two scripts:</p>
+<ul>
+<li>Jpeg1.py - good for JPEG structure analysis,</li>
+<li>ExtractBytes.py - something like <strong>dd</strong> in linux.</li>
+</ul>
+<p>We can use them to notice huge difference between <code>0xFF 0xD9</code> marker - which stands for end of image - and the size of the <em>ShahOfGimli.jpg</em>. Conclusion: something was added at the end of the file. This time we won&rsquo;t use these scripts but <strong>binwalk</strong>.</p>
+<blockquote>
+<p><code>root@kali:~/Pulpit/shah# binwalk ShahOfGimli.jpg</code></p>
+</blockquote>
+<pre><code>DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             JPEG image data, JFIF standard 1.01
+132375        0x20517         gzip compressed data, from Unix, last modified: 1970-01-01 00:00:00 (null date)
+
+</code></pre><p>Now let&rsquo;s add <strong>-e</strong> parameter to extract all data known by the program.</p>
+<blockquote>
+<p><code>root@kali:~/Pulpit/shah# binwalk ShahOfGimli.jpg</code></p>
+</blockquote>
+<p>We will get again these scripts and also:</p>
+<ul>
+<li>flag.enc - the flag we are looking for,</li>
+<li>Gimli04Base.jpg - another image.</li>
+</ul>
+<p>If you analyse this new image you&rsquo;ll see there&rsquo;s nothing special. Now we have to go back to the tips from COM2. There was said the Gimli was a key. On the new image is Gimli so&hellip;. Let&rsquo;s create digest.</p>
+<blockquote>
+<p><code>root@kali:~/Pulpit/shah# sha256sum Gimli04Base.jpg</code></p>
+</blockquote>
+<pre><code>e26db845ae634c7d774f8924a565e34e215b659a97c7e1d01a401fea7c5f6d87
+</code></pre><p>And let&rsquo;s try to decrypt our flag.</p>
+<blockquote>
+<p><code>root@kali:~/Pulpit/shah# openssl aes-256-cbc -in flag.enc -out FLAG -K e26db845ae634c7d774f8924a565e34e215b659a97c7e1d01a401fea7c5f6d87 -iv 00000000000000000000000000000000</code></p>
+</blockquote>
+<p><strong>FLAG</strong></p>
+<pre><code>CTFlearn{Gimli.Is.A.Warrior}
+</code></pre>
+  
+  
+
+
+<style>
+	ul.share-buttons{
+	  list-style: none;
+	  padding: 0;
+	}
+
+	ul.share-buttons li{
+	  display: inline;
+	}
+
+	ul.share-buttons .sr-only{
+	  position: absolute;
+	  clip: rect(1px 1px 1px 1px);
+	  clip: rect(1px, 1px, 1px, 1px);
+	  padding: 0;
+	  border: 0;
+	  height: 1px;
+	  width: 1px;
+	  overflow: hidden;
+	}
+</style>
+
+
+  
+
+
+  
+
+</div>
+
+</div>
+</div>
+<script src="ctfgeek.github.io/js/ui.js"></script>
+<script src="ctfgeek.github.io/js/menus.js"></script>
+
+
+<script>
+  
+  if (window.location.hostname != "localhost") {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'Your Google Analytics tracking ID', 'auto');
+    ga('send', 'pageview');
+  }
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
+
