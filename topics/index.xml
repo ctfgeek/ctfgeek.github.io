@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Topics on CTFgeek</title>
-    <link>ctfgeek.github.io/topics/</link>
+    <link>/topics/</link>
     <description>Recent content in Topics on CTFgeek</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020. All rights reserved.</copyright>
     <lastBuildDate>Sun, 05 Jul 2020 15:57:57 +0200</lastBuildDate>
     
-	<atom:link href="ctfgeek.github.io/topics/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/topics/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>CTFlearn</title>
-      <link>ctfgeek.github.io/topics/ctflearn/</link>
+      <link>/topics/ctflearn/</link>
       <pubDate>Sun, 05 Jul 2020 12:33:17 +0200</pubDate>
       
-      <guid>ctfgeek.github.io/topics/ctflearn/</guid>
+      <guid>/topics/ctflearn/</guid>
       <description></description>
     </item>
     
